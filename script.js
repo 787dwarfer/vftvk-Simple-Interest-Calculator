@@ -50,11 +50,13 @@ function check_amount()
     if (amount=="NaN")
     {
          alert("Principal must be a number greater than zero");
+	 document.getElementById("outputRow").style.display="inline";
 	 return number_valid;
     }
     if (amount<=0)
     {
          alert("Principal must be a number greater than zero");
+	 document.getElementById("outputRow").style.display="inline";
 	 return number_valid;        
     }
     number_valid = true;
